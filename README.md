@@ -12,6 +12,7 @@ Este es un proyecto de gestión de sedes y departamentos desarrollado con **Pyth
 * **Lenguaje:** Python
 * **Framework:** Django
 * **Base de datos:** Oracle Database (utilizando el driver cx_Oracle).
+* "Este proyecto utiliza cx_Oracle para conectar la lógica de Django con una base de datos Oracle XE, permitiendo una gestión de datos robusta y escalable."
 * **Frontend:** HTML5 y CSS3
 
 ##  Cómo ejecutar el proyecto
