@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <title>Index</title>
+</head>
+<body>
+   <h2>Index</h2>
+
+
+   <form method="post" action="{% url 'departamentos' %}">
+       {% csrf_token %}
+
+
+       <label for="dept_no">dept_no:</label>
+       <input type="text" name="dept_no" id="dept_no" value="{{ dept_no }}"><br><br>
+
+
+       <label for="dnombre">dnombre:</label>
+       <input type="text" name="dnombre" id="dnombre" value="{{ dnombre }}"><br><br>
+
+
+       <label for="loc">loc:</label>
+       <input type="text" name="loc" id="loc" value="{{ loc }}"><br><br>
+
+
+       <button type="submit" name="accion" value="insertar">INSERTAR</button>
+       <button type="submit" name="accion" value="actualizar">ACTUALIZAR</button>
+       <button type="submit" name="accion" value="borrar">BORRAR</button>
+       <button type="submit" name="accion" value="visualizar">VISUALIZAR</button>
+   </form>
+
+
+   {% if mensaje %}
+       <p>{{ mensaje }}</p>
+   {% endif %}
+
+
+   <h3>Listado de departamentos</h3>
+   {% if listado and listado|length > 0 %}
+       <table border="1">
+           <thead>
+               <tr>
+                   <th>dept_no</th>
+                   <th>dnombre</th>
+                   <th>loc</th>
+                   <th>Acciones</th>
+               </tr>
+           </thead>
+           <tbody>
+               {% for d in listado %}
+                   <tr>
+                       <td>{{ d.dept_no }}</td>
+                       <td>{{ d.dnombre }}</td>
+                       <td>{{ d.loc }}</td>
+                       <td>
+
+                          <a href="{% url 'departamentos' %}?accion=borrar&dept_no={{ d.dept_no }}">Borrar</a> |
+                         <a href="{% url 'departamentos' %}?accion=actualizar&dept_no={{ d.dept_no }}&dnombre={{ d.dnombre }}&loc={{ d.loc }}">Editar</a>
+
+
+
+                       </td>
+                   </tr>
+               {% endfor %}
+           </tbody>
+       </table>
+   {% else %}
+       <p>No hay registros.</p>
+   {% endif %}
+
+</body>
+</html>
+
+
+
+
