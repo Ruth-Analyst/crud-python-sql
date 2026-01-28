@@ -23,3 +23,10 @@ Este es un proyecto de gestión de sedes y departamentos desarrollado con **Pyth
 
 ---
 *Proyecto desarrollado como parte de mi portafolio de Analista de Datos y examen final del curso de DESARROLLO Y VISUALIZACIÓN DE DATOS CON PYTHON (150 horas) llevado en CFTIC GETAFE (Nov- 2025)*
+
+Sobre la Autora
+Ruth Travezaño - Ingeniera Industrial & Data Scientist (Nuclio).
+"Apasionada por optimizar procesos y transformar datos en decisiones estratégicas".
+•	LinkedIn: https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile
+•	Ubicación: Madrid, España 
+
