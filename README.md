@@ -11,7 +11,7 @@ Este es un proyecto de gestión de sedes y departamentos desarrollado con **Pyth
 ##  Tecnologías utilizadas
 * **Lenguaje:** Python
 * **Framework:** Django
-* **Base de datos:** Oracle PL/SQL Developer XE
+* **Base de datos:** Oracle Database (utilizando el driver cx_Oracle).
 * **Frontend:** HTML5 y CSS3
 
 ##  Cómo ejecutar el proyecto
